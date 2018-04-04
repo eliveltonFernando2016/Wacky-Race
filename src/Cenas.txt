@@ -1,14 +1,23 @@
 1
 Largada
-descrição
 Uma pacata cidade promove uma corrida anual de carros feitos artesanalmente, onde os competidores tem por objetivo fazer um trajeto pré determinado e chegar ao final, o vencedor será aquele que primeiro cruzar a linha de chegada. Para dificultar e facilitar a vida dos competidores armadilhas e ajudas estarão espalhadas por todo o caminho, a trilha passa por diversas paisagens e em cada uma delas uma emoção diferente irá fazer você se sentir nesse jogo maluco! É dada a largada e há 3 objetos que te levam a estradas diferentes através desses objetos. Um amuleto, um cadeado e um celular.
 1
-amuleto
+Amuleto
 0
-Texto:
+O amuleto serve para te levar à cena 2.
+USE
+2
+2
+Helice
+0
+A helice serve para te levar à cena 3.
+USE
+3
 ;
-
-1.2.1: Toscana
-Estrada da Toscana, Itália perca-se entre as estradas e montes, em sua mala é possível encontrar um BAFOMETRO, entre San Gimignano e Florença, Montepulciano e Siena, você para para um rápido descanso e ali encontra uma HÉLICE. Vinhedos, ciprestes e encantadoras vilas farão parte de uma paisagem banhada de sol, e com um CARREGADOR DE CELULAR que você trouxe. Mais adiante você avista uma ponte quebrada, e o único caminho é por ali. Diante desse cenário Itáliano lindo, o que você faria?;
-1.2.2:Altiplano Andino
-Atliplano Andino, Bolívia, o entorno da estrada que parte de San Pedro de Atacama, no Chile, rumo ao Salar de Uyuni, na Bolívia, reserva alguns dos mais espetaculares cenários naturais do planeta. Lá estão a Laguna Verde, a Laguna Colorada e uma série de vulcões, como o Licanbur;
+2
+Toscana
+Estrada da Toscana, Itália perca-se entre as estradas e montes, em sua mala é possível encontrar um BAFOMETRO, entre San Gimignano e Florença, Montepulciano e Siena, você para para um rápido descanso e ali encontra uma HÉLICE. Vinhedos, ciprestes e encantadoras vilas farão parte de uma paisagem banhada de sol, e com um CARREGADOR DE CELULAR que você trouxe. Mais adiante você avista uma ponte quebrada, e o único caminho é por ali. Diante desse cenário Itáliano lindo, o que você faria?
+;
+3
+Altiplano Andino
+Atliplano Andino, Bolívia, o entorno da estrada que parte de San Pedro de Atacama, no Chile, rumo ao Salar de Uyuni, na Bolívia, reserva alguns dos mais espetaculares cenários naturais do planeta. Lá estão a Laguna Verde, a Laguna Colorada e uma série de vulcões, como o Licanbur

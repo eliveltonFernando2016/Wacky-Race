@@ -1,27 +1,37 @@
 import java.io.File
 import java.io.InputStream
 
-fun fileReader(): List<String>{
-    val stream: InputStream = File("/home/elivelton/Dropbox/LP/Wacky Races/src/Cenas.txt").inputStream()
+fun fileReader(): ArrayList<Scene>{
+    val listaCenas = ArrayList<Scene>()
+
+    val stream: InputStream = File("/home/elivelton/Dropbox/LP/Wacky-Race/src/Cenas.txt").inputStream()
     val str = stream.bufferedReader().use { it.readText() }
     val reg = Regex(";")
     var list = str.split(reg)
 
-    for((index, value) in list.withIndex()){
+    for (i in list){
+        /*for(j in i){
+            val regAux = Regex("\n")
+            val listAux = i.split(regAux)
+            val scene = Scene(Integer.parseInt(listAux[0]), listAux[1], listAux[2])
 
+            listaCenas.add(scene)
+        }*/
+        val regAux = Regex("\n")
+        val listAux = i.split(regAux)
+
+        for(j in listAux){
+            println(j)
+        }
     }
 
-    return list
+    return listaCenas
 }
 
 fun main(args: Array<String>) {
-    var game = Game()
-    var scene = Scene()
-    var inventory = Inventory()
+    var cenas = fileReader()
 
-    var listaCena: List<String> = fileReader()
-
-    for((index, value) in listaCena.withIndex()){
-
+    for (i in cenas){
+        println(i.toString())
     }
 }
