@@ -6,23 +6,22 @@ fun fileReader(): ArrayList<Scene>{
 
     val stream: InputStream = File("/home/elivelton/Dropbox/LP/Wacky-Race/src/Cenas.txt").inputStream()
     val str = stream.bufferedReader().use { it.readText() }
-    val reg = Regex(";")
+    val reg = Regex(";;")
     var list = str.split(reg)
 
     for (i in list){
-        /*for(j in i){
-            val regAux = Regex("\n")
-            val listAux = i.split(regAux)
-            val scene = Scene(Integer.parseInt(listAux[0]), listAux[1], listAux[2])
-
-            listaCenas.add(scene)
-        }*/
-        val regAux = Regex("\n")
+        val regAux = Regex(";")
         val listAux = i.split(regAux)
 
-        for(j in listAux){
-            println(j)
+        val listaObjetos = ArrayList<Objects>()
+
+        var j: Int = 3
+        while (j <= (listAux.size)-1){
+
         }
+
+        val scene = Scene(Integer.parseInt(listAux[0]), listAux[1], listAux[2])
+        listaCenas.add(scene)
     }
 
     return listaCenas
