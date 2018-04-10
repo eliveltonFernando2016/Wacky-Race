@@ -4,15 +4,18 @@ class Scene {
     var descricao: String = ""
     var itens = arrayListOf<Objects>()
 
-    constructor(id: Int, titulo: String, descricao: String) {
+    constructor()
+
+    constructor(id: Int, titulo: String, descricao: String, itens: ArrayList<Objects>) {
         this.id = id
         this.titulo = titulo
         this.descricao = descricao
+        this.itens = itens
     }
-
-    constructor()
 
     override fun toString(): String {
-        return "Scene(id=$id, titulo='$titulo', descricao='$descricao')"
+        return "Scene(id=$id, titulo='$titulo', descricao='$descricao', itens=$itens)"
     }
+
+
 }
