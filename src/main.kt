@@ -38,11 +38,12 @@ fun newGame(listaCenas: ArrayList<Scene>): Game{
     return Game(listaCenas, 0)
 }
 
+var inventory = Inventory()
 fun runGame(jogo: Game): Int{
     do{
         println("Cena Atual: "+jogo.scenes[jogo.cena_atual].titulo)
         println("Descrição: "+jogo.scenes[jogo.cena_atual].descricao)
-        print("Ação: ")
+        println("Ação: ")
         var escolha: String = readLine()!!
 
         val reg = Regex(" ")
@@ -55,18 +56,23 @@ fun runGame(jogo: Game): Int{
         var objetoOk = false
 
         for(i in jogo.scenes[jogo.cena_atual].itens){
-            if(i.nome.equals(objeto) && i.comando_correto.equals(acao)) {
+            if(i.nome.equals(objeto, true) && i.comando_correto.equals(acao, true)) {
                 objetoEncontrado = i
                 objetoOk = true
             }
         }
 
         if(objetoOk){
-            jogo.cena_atual = objetoEncontrado.cena_alvo
+            if(objetoEncontrado.comando_correto.equals("use", true)){
+                jogo.cena_atual = objetoEncontrado.cena_alvo
+            }
+            else{
+                objetoEncontrado.comando_correto = "USE"
+                inventory.itens.add(objetoEncontrado)
+            }
         }
         else{
             println("Objeto ou Ação incorretos!")
-            jogo.cena_atual = 16
         }
     }
     while (jogo.cena_atual != 16)
@@ -79,7 +85,8 @@ fun printMenu(){
             "|                           |\n" +
             "| 1: New Game               |\n" +
             "| 2: End Game               |\n" +
-            "| 3: Help                   |\n" +
+            "| 3: Listar Inventário      |\n" +
+            "| 4: Help                   |\n" +
             "-----------------------------")
 }
 
@@ -98,6 +105,16 @@ fun menuOption(){
             println("Fim de Jogo!")
             return
         }
+        3 -> {
+            printInventario(inventory)
+        }
+    }
+}
+
+fun printInventario(listaInventario: Inventory){
+    println("Lista de objetos no Inventário:")
+    for (i in listaInventario.itens){
+        println(i.toString())
     }
 }
 
