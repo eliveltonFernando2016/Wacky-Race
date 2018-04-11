@@ -38,40 +38,69 @@ fun newGame(listaCenas: ArrayList<Scene>): Game{
     return Game(listaCenas, 0)
 }
 
+fun runGame(jogo: Game): Int{
+    do{
+        println("Cena Atual: "+jogo.scenes[jogo.cena_atual].titulo)
+        println("Descrição: "+jogo.scenes[jogo.cena_atual].descricao)
+        print("Ação: ")
+        var escolha: String = readLine()!!
+
+        val reg = Regex(" ")
+        val list = escolha.split(reg)
+
+        var acao = list[0]
+        var objeto = list[1]
+
+        var objetoEncontrado = Objects()
+        var objetoOk = false
+
+        for(i in jogo.scenes[jogo.cena_atual].itens){
+            if(i.nome.equals(objeto) && i.comando_correto.equals(acao)) {
+                objetoEncontrado = i
+                objetoOk = true
+            }
+        }
+
+        if(objetoOk){
+            jogo.cena_atual = objetoEncontrado.cena_alvo
+        }
+        else{
+            println("Objeto ou Ação incorretos!")
+            jogo.cena_atual = 16
+        }
+    }
+    while (jogo.cena_atual != 16)
+
+    return 2
+}
+
 fun printMenu(){
-    println("----WELCOME TO Wacky-Race:----\n" +
+    println("----Welcome To Wacky-Race:----\n" +
             "|                           |\n" +
             "| 1: New Game               |\n" +
             "| 2: End Game               |\n" +
+            "| 3: Help                   |\n" +
             "-----------------------------")
 }
 
-fun menuOption(option: Int){
+fun menuOption(){
     printMenu()
 
-    while (option != 2){
+    println("Escolha uma opção:")
+    var escolha:Int = readLine()!!.toInt()
 
-        println("Escolha uma opção:")
-        val escolha:Int = readLine()!!.toInt()
-
-        when(escolha){
-            1 ->{
-                println("Escolhi Novo Jogo!")
-                newGame(fileReader())
-            }
-            2 -> {
-                println("Fim de Jogo!")
-                return
-            }
+    when(escolha){
+        1 ->{
+            println("Escolhi Novo Jogo!")
+            escolha = runGame(newGame(fileReader()))
+        }
+        2 -> {
+            println("Fim de Jogo!")
+            return
         }
     }
 }
 
 fun main(args: Array<String>) {
-    menuOption(0)
-
-    //newGame(fileReader())
-
-
-
+    menuOption()
 }

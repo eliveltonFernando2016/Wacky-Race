@@ -19,6 +19,8 @@ class Objects {
         this.cena_alvo = cena_alvo
     }
 
+    constructor()
+
     override fun toString(): String {
         return "Objects(id=$id, nome='$nome', tipo=$tipo, descricao='$descricao', comando_correto='$comando_correto', cena_alvo=$cena_alvo)"
     }
