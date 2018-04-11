@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2492901c-250e-4491-8334-7e6287a94747" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Menu.kt" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="2492901c-250e-4491-8334-7e6287a94747" name="Default" comment="Lula ladrão, roubou meu coraão!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/out/production/Wacky Races/Cenas.txt" afterPath="$PROJECT_DIR$/out/production/Wacky Races/Cenas.txt" />
-      <change beforePath="$PROJECT_DIR$/out/production/Wacky Races/Game.class" afterPath="$PROJECT_DIR$/out/production/Wacky Races/Game.class" />
       <change beforePath="$PROJECT_DIR$/out/production/Wacky Races/MainKt.class" afterPath="$PROJECT_DIR$/out/production/Wacky Races/MainKt.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Wacky Races/Objects.class" afterPath="$PROJECT_DIR$/out/production/Wacky Races/Objects.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Wacky Races/Scene.class" afterPath="$PROJECT_DIR$/out/production/Wacky Races/Scene.class" />
-      <change beforePath="$PROJECT_DIR$/src/Game.kt" afterPath="$PROJECT_DIR$/src/Game.kt" />
-      <change beforePath="$PROJECT_DIR$/src/Objects.kt" afterPath="$PROJECT_DIR$/src/Objects.kt" />
-      <change beforePath="$PROJECT_DIR$/src/Scene.kt" afterPath="$PROJECT_DIR$/src/Scene.kt" />
+      <change beforePath="$PROJECT_DIR$/src/Cenas.txt" afterPath="$PROJECT_DIR$/src/Cenas.txt" />
+      <change beforePath="$PROJECT_DIR$/src/Menu.kt" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/main.kt" afterPath="$PROJECT_DIR$/src/main.kt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,20 +22,23 @@
       <file leaf-file-name="main.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="954">
-              <caret line="53" column="4" lean-forward="false" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
+            <state relative-caret-position="414">
+              <caret line="24" column="46" lean-forward="true" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
               <folding>
-                <element signature="e#0#46#0" expanded="true" />
+                <element signature="n#!!block;n#newGame#0" expanded="false" />
+                <element signature="n#!!block;n#printMenu#0" expanded="false" />
+                <element signature="n#!!block;n#menuOption#0" expanded="false" />
+                <element signature="n#!!block;n#main#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Menu.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Menu.kt">
+      <file leaf-file-name="Cenas.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cenas.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+            <state relative-caret-position="18">
+              <caret line="1" column="772" lean-forward="false" selection-start-line="1" selection-start-column="772" selection-end-line="1" selection-end-column="772" />
               <folding />
             </state>
           </provider>
@@ -50,38 +47,8 @@
       <file leaf-file-name="Objects.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Objects.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Scene.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Scene.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Game.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Game.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Cenas.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cenas.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="823" />
+            <state relative-caret-position="54">
+              <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -115,12 +82,12 @@
         <option value="$PROJECT_DIR$/src/objects.json" />
         <option value="$PROJECT_DIR$/src/Teste.txt" />
         <option value="$PROJECT_DIR$/src/Objetos.txt" />
-        <option value="$PROJECT_DIR$/src/Cenas.txt" />
-        <option value="$PROJECT_DIR$/src/Objects.kt" />
         <option value="$PROJECT_DIR$/src/Scene.kt" />
         <option value="$PROJECT_DIR$/src/Game.kt" />
         <option value="$PROJECT_DIR$/src/menu.kt" />
         <option value="$PROJECT_DIR$/src/Menu.kt" />
+        <option value="$PROJECT_DIR$/src/Objects.kt" />
+        <option value="$PROJECT_DIR$/src/Cenas.txt" />
         <option value="$PROJECT_DIR$/src/main.kt" />
       </list>
     </option>
@@ -148,9 +115,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -167,7 +132,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -292,6 +259,14 @@
       <option name="presentableId" value="Default" />
       <updated>1522515442077</updated>
     </task>
+    <task id="LOCAL-00001" summary="Terminada a cerializacão de arquivo. Criacão da classe de menu, criacão das funcões novo jogo e printMenu.">
+      <created>1523365474068</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1523365474068</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -304,15 +279,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="982" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="982" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32747254" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32747254" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -331,6 +305,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32747254" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -338,8 +313,15 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Terminada a cerializacão de arquivo. Criacão da classe de menu, criacão das funcões novo jogo e printMenu." />
+    <MESSAGE value="Lula ladrão, roubou meu coraão!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lula ladrão, roubou meu coraão!" />
+  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="4" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -352,7 +334,10 @@
         <state relative-caret-position="391">
           <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
-            <element signature="e#0#46#0" expanded="true" />
+            <element signature="n#!!block;n#newGame#0" expanded="false" />
+            <element signature="n#!!block;n#printMenu#0" expanded="false" />
+            <element signature="n#!!block;n#menuOption#0" expanded="false" />
+            <element signature="n#!!block;n#main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -391,7 +376,10 @@
         <state relative-caret-position="391">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
-            <element signature="e#0#46#0" expanded="true" />
+            <element signature="n#!!block;n#newGame#0" expanded="false" />
+            <element signature="n#!!block;n#printMenu#0" expanded="false" />
+            <element signature="n#!!block;n#menuOption#0" expanded="false" />
+            <element signature="n#!!block;n#main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -461,7 +449,10 @@
         <state relative-caret-position="170">
           <caret line="10" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="1" />
           <folding>
-            <element signature="e#0#46#0" expanded="true" />
+            <element signature="n#!!block;n#newGame#0" expanded="false" />
+            <element signature="n#!!block;n#printMenu#0" expanded="false" />
+            <element signature="n#!!block;n#menuOption#0" expanded="false" />
+            <element signature="n#!!block;n#main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -506,7 +497,10 @@
         <state relative-caret-position="391">
           <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
-            <element signature="e#0#46#0" expanded="true" />
+            <element signature="n#!!block;n#newGame#0" expanded="false" />
+            <element signature="n#!!block;n#printMenu#0" expanded="false" />
+            <element signature="n#!!block;n#menuOption#0" expanded="false" />
+            <element signature="n#!!block;n#main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -545,7 +539,10 @@
         <state relative-caret-position="391">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
-            <element signature="e#0#46#0" expanded="true" />
+            <element signature="n#!!block;n#newGame#0" expanded="false" />
+            <element signature="n#!!block;n#printMenu#0" expanded="false" />
+            <element signature="n#!!block;n#menuOption#0" expanded="false" />
+            <element signature="n#!!block;n#main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -617,19 +614,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Objetos.txt" />
-    <entry file="file://$PROJECT_DIR$/src/Cenas.txt">
+    <entry file="file://$PROJECT_DIR$/src/Menu.kt" />
+    <entry file="file://$PROJECT_DIR$/src/Game.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="823" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Objects.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-          <folding />
+        <state relative-caret-position="126">
+          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -637,32 +626,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Menu.kt">
+    <entry file="file://$PROJECT_DIR$/src/Objects.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
-          <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cenas.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="772" lean-forward="false" selection-start-line="1" selection-start-column="772" selection-end-line="1" selection-end-column="772" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="954">
-          <caret line="53" column="4" lean-forward="false" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
+        <state relative-caret-position="414">
+          <caret line="24" column="46" lean-forward="true" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
           <folding>
-            <element signature="e#0#46#0" expanded="true" />
+            <element signature="n#!!block;n#newGame#0" expanded="false" />
+            <element signature="n#!!block;n#printMenu#0" expanded="false" />
+            <element signature="n#!!block;n#menuOption#0" expanded="false" />
+            <element signature="n#!!block;n#main#0" expanded="false" />
           </folding>
         </state>
       </provider>

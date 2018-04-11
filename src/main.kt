@@ -35,9 +35,7 @@ fun fileReader(): ArrayList<Scene>{
 }
 
 fun newGame(listaCenas: ArrayList<Scene>): Game{
-    var newGame = Game(listaCenas, 0)
-
-    return newGame
+    return Game(listaCenas, 0)
 }
 
 fun printMenu(){
@@ -48,12 +46,31 @@ fun printMenu(){
             "-----------------------------")
 }
 
-fun main(args: Array<String>) {
+fun menuOption(option: Int){
     printMenu()
 
-    
+    while (option != 2){
 
-    newGame(fileReader())
+        println("Escolha uma opção:")
+        val escolha:Int = readLine()!!.toInt()
+
+        when(escolha){
+            1 ->{
+                println("Escolhi Novo Jogo!")
+                newGame(fileReader())
+            }
+            2 -> {
+                println("Fim de Jogo!")
+                return
+            }
+        }
+    }
+}
+
+fun main(args: Array<String>) {
+    menuOption(0)
+
+    //newGame(fileReader())
 
 
 
