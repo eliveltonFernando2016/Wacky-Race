@@ -1,10 +1,12 @@
 import java.io.File
 import java.io.InputStream
+import javax.print.attribute.IntegerSyntax
 
 fun fileReader(): ArrayList<Scene>{
     val listaCenas = ArrayList<Scene>()
 
-    val stream: InputStream = File("/Users/cogeti/Documents/Wacky-Race/src/Cenas.txt").inputStream()
+    //val stream: InputStream = File("/Users/cogeti/Dropbox/LP/Wacky-Race/src/Cenas.txt").inputStream()
+    val stream: InputStream = File("/home/elivelton/Dropbox/LP/Wacky-Race/src/Cenas.txt").inputStream()
     val str = stream.bufferedReader().use { it.readText() }
     val reg = Regex(";;")
     var list = str.split(reg)
@@ -46,42 +48,55 @@ fun runGame(jogo: Game): Int{
         println("Ação: ")
         var escolha: String = readLine()!!
 
-        val reg = Regex(" ")
-        val list = escolha.split(reg)
-
-        var acao = list[0]
-        var objeto = list[1]
-
-        var objetoEncontrado = Objects()
-        var objetoOk = false
-
-        for(i in jogo.scenes[jogo.cena_atual].itens){
-            if(i.nome.equals(objeto, true) && i.comando_correto.equals(acao, true)) {
-                objetoEncontrado = i
-                objetoOk = true
-            }
+        if(escolha.equals('2')){
+            return 2
         }
-
-        if(objetoOk){
-            if(objetoEncontrado.comando_correto.equals("use", true)){
-                jogo.cena_atual = objetoEncontrado.cena_alvo
-            }
-            else{
-                objetoEncontrado.comando_correto = "USE"
-                inventory.itens.add(objetoEncontrado)
-            }
+        else if(escolha.equals('3')){
+            printInventario(inventory)
         }
-        else{
-            println("Objeto ou Ação incorretos!")
+        else if(escolha.equals('4')){
+            printHelp()
+        }
+        else {
+            val reg = Regex(" ")
+            val list = escolha.split(reg)
+
+            var acao = list[0]
+            var objeto = list[1]
+
+            var objetoEncontrado = Objects()
+            var objetoOk = false
+
+            for (i in jogo.scenes[jogo.cena_atual].itens) {
+                if ((i.nome.equals(objeto, true) && i.comando_correto.equals(acao, true)) || (i.nome.equals(objeto, true) && acao.equals("check", true))) {
+                    objetoEncontrado = i
+                    objetoOk = true
+                }
+            }
+
+            if (objetoOk) {
+                if (objetoEncontrado.comando_correto.equals("use", true)) {
+                    jogo.cena_atual = objetoEncontrado.cena_alvo
+                }
+                else if(objetoEncontrado.comando_correto.equals("get", true)) {
+                    objetoEncontrado.comando_correto = "USE"
+                    inventory.itens.add(objetoEncontrado)
+                }
+                else{
+                    println(objetoEncontrado.descricao)
+                }
+            } else {
+                println("Objeto ou Ação incorretos!")
+            }
         }
     }
-    while (jogo.cena_atual != 16)
+    while (jogo.cena_atual != 10)
 
     return 2
 }
 
 fun printMenu(){
-    println("----Welcome To Wacky-Race:----\n" +
+    println("----WELCOME TO Wacky-Race----\n" +
             "|                           |\n" +
             "| 1: New Game               |\n" +
             "| 2: End Game               |\n" +
@@ -98,7 +113,6 @@ fun menuOption(){
 
     when(escolha){
         1 ->{
-            println("Escolhi Novo Jogo!")
             escolha = runGame(newGame(fileReader()))
         }
         2 -> {
@@ -108,14 +122,33 @@ fun menuOption(){
         3 -> {
             printInventario(inventory)
         }
+        4 -> {
+            printHelp()
+        }
     }
 }
 
 fun printInventario(listaInventario: Inventory){
-    println("Lista de objetos no Inventário:")
-    for (i in listaInventario.itens){
-        println(i.toString())
+    if(listaInventario.size == 0){
+        println("Inventário Vazio!")
     }
+    else {
+        println("Lista de objetos no Inventário:")
+        for (i in listaInventario.itens) {
+            println(i.toString())
+        }
+    }
+}
+
+fun printHelp(){
+    println("------------HELP ME------------\n" +
+            "|                              |\n" +
+            "| Comandos válidos:            |\n" +
+            "| USE: usa um objeto.          |\n" +
+            "| GET: pega um objeto.         |\n" +
+            "| CHECK: descreve um objeto.   |\n" +
+            "| Exemplo: USE/GET/CHECK objeto|\n" +
+            "-------------------------------")
 }
 
 fun main(args: Array<String>) {
