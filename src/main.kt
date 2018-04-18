@@ -1,11 +1,11 @@
-import java.io.File
 import java.io.InputStream
+import java.io.File
 
 fun fileReader(): ArrayList<Scene>{
     val listaCenas = ArrayList<Scene>()
 
-    //val stream: InputStream = File("/Users/cogeti/Dropbox/LP/Wacky-Race/src/Cenas.txt").inputStream()
-    val stream: InputStream = File("/home/elivelton/Dropbox/LP/Wacky-Race/src/Cenas.txt").inputStream()
+    val stream: InputStream = File("/Users/cogeti/Dropbox/LP/Wacky-Race/src/Cenas.txt").inputStream()
+    //val stream: InputStream = File("/home/elivelton/Dropbox/LP/Wacky-Race/src/Cenas.txt").inputStream()
     val str = stream.bufferedReader().use { it.readText() }
     val reg = Regex(";;")
     var list = str.split(reg)
@@ -42,72 +42,105 @@ fun newGame(listaCenas: ArrayList<Scene>): Game{
 var inventory = Inventory()
 fun runGame(jogo: Game): Int{
     do{
+        println("Número Cena Atual: "+jogo.cena_atual)
         println("Cena Atual: "+jogo.scenes[jogo.cena_atual].titulo)
         println("Descrição: "+jogo.scenes[jogo.cena_atual].descricao)
         println("Ação: ")
         var escolha: String = readLine()!!
 
-        if(escolha.equals("2")){
-            break
-        }
-        else if(escolha.equals("3")){
-            printInventario(inventory)
-        }
-        else if(escolha.equals("4")){
-            printHelp()
-        }
-        else {
-            val reg = Regex(" ")
-            val list = escolha.split(reg)
-
-            var acao = list[0]
-            var objeto = list[1]
-
-            var objetoEncontrado = Objects()
-            var objetoOk = false
-
-            for (i in jogo.scenes[jogo.cena_atual].itens) {
-                if (i.nome.equals(objeto, true) && (i.comando_correto.equals(acao, true) || acao.equals("check", true))) {
-                    objetoEncontrado = i
-                    objetoOk = true
-                }
+        when(escolha){
+            "2" -> {
+                return 2
             }
+            "3" -> {
+                printInventario(inventory)
+            }
+            "4" -> {
+                println("Digite o nome do Jogo:")
+                var nomeJogo: String = readLine()!!
+                saveGame(nomeJogo, concatenaString(jogo.cena_atual))
+                return 2
+            }
+            "6" -> {
+                printHelp()
+            }
+            else -> {
+                val reg = Regex(" ")
+                val list = escolha.split(reg)
 
-            if (objetoOk) {
-                if(acao.equals("use", true)) {
-                    jogo.cena_atual = objetoEncontrado.cena_alvo
+                var acao = list[0]
+                var objeto = list[1]
+
+                var objetoEncontrado = Objects()
+                var objetoOk = false
+
+                for (i in jogo.scenes[jogo.cena_atual].itens) {
+                    if (i.nome.equals(objeto, true) && (i.comando_correto.equals(acao, true) || acao.equals("check", true))) {
+                        objetoEncontrado = i
+                        objetoOk = true
+                    }
                 }
-                else if(acao.equals("get", true)) {
-                    objetoEncontrado.comando_correto = "USE"
-                    inventory.itens.add(objetoEncontrado)
+
+                if (objetoOk) {
+                    if(acao.equals("use", true)) {
+                        jogo.cena_atual = objetoEncontrado.cena_alvo-1
+                    }
+                    else if(acao.equals("get", true)) {
+                        objetoEncontrado.comando_correto = "USE"
+                        inventory.itens.add(objetoEncontrado)
+                    }
+                    else if(acao.equals("check", true)){
+                        println(objetoEncontrado.descricao)
+                    }
+                } else {
+                    println("Objeto ou Ação incorretos!")
                 }
-                else{
-                    println(objetoEncontrado.descricao)
-                }
-            } else {
-                println("Objeto ou Ação incorretos!")
             }
         }
     }
-    while (jogo.cena_atual != 10)
+    while (jogo.cena_atual != 16)
 
+    println("Você venceu!")
     return 2
 }
 
-fun printMenu(){
-    println("----WELCOME TO Wacky-Race----\n" +
-            "|                           |\n" +
-            "| 1: New Game               |\n" +
-            "| 2: End Game               |\n" +
-            "| 3: Listar Inventário      |\n" +
-            "| 4: Help                   |\n" +
-            "-----------------------------")
+fun concatenaString(idCenaAtual: Int): String{
+    var stringConcatenada = idCenaAtual.toString()
+    var stringInventario = ""
+    var retorno = ""
+
+    if(inventory.itens.size > 0){
+        for (i in inventory.itens){
+            stringInventario += i.id.toString()
+            stringInventario += ";"
+        }
+
+        retorno = stringConcatenada+";"+stringInventario
+    }
+    else{
+        retorno = stringConcatenada
+    }
+
+    return retorno
+}
+
+fun saveGame(nomeJogo: String, conteudo: String){
+    try {
+        File("/Users/cogeti/Dropbox/LP/Wacky-Race/src/$nomeJogo.txt").writeText(conteudo)
+    } catch (e: Exception){
+        e.printStackTrace()
+    }
+    println("Game saved!")
+}
+
+fun restartGame(){
+    println("Game restarted!")
 }
 
 fun menuOption(){
     printMenu()
 
-    var escolha:Int = 0
+    var escolha = 0
 
     while (escolha != 2) {
         println("Escolha uma opção:")
@@ -125,10 +158,28 @@ fun menuOption(){
                 printInventario(inventory)
             }
             4 -> {
+                println("Impossível salvar um jogo sem iniciá-lo!")
+            }
+            5 -> {
+                restartGame()
+            }
+            6 -> {
                 printHelp()
             }
         }
     }
+}
+
+fun printMenu(){
+    println("----WELCOME TO Wacky-Race----\n" +
+            "|                           |\n" +
+            "| 1: New Game               |\n" +
+            "| 2: End Game               |\n" +
+            "| 3: Listar Inventário      |\n" +
+            "| 4: Save Game              |\n" +
+            "| 5: Restart Game           |\n" +
+            "| 6: Help                   |\n" +
+            "-----------------------------")
 }
 
 fun printInventario(listaInventario: Inventory){
