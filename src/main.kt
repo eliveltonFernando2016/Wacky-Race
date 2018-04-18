@@ -1,6 +1,9 @@
 import java.io.InputStream
 import java.io.File
 
+var inventory = Inventory()
+var listaDeCenas = fileReader()
+
 fun fileReader(): ArrayList<Scene>{
     val listaCenas = ArrayList<Scene>()
 
@@ -39,10 +42,8 @@ fun newGame(listaCenas: ArrayList<Scene>): Game{
     return Game(listaCenas, 0)
 }
 
-var inventory = Inventory()
 fun runGame(jogo: Game): Int{
     do{
-        println("Número Cena Atual: "+jogo.cena_atual)
         println("Cena Atual: "+jogo.scenes[jogo.cena_atual].titulo)
         println("Descrição: "+jogo.scenes[jogo.cena_atual].descricao)
         println("Ação: ")
@@ -98,7 +99,7 @@ fun runGame(jogo: Game): Int{
             }
         }
     }
-    while (jogo.cena_atual != 16)
+    while (jogo.cena_atual != 15)
 
     println("Você venceu!")
     return 2
@@ -133,8 +134,23 @@ fun saveGame(nomeJogo: String, conteudo: String){
     println("Game saved!")
 }
 
-fun restartGame(){
-    println("Game restarted!")
+fun restartGame(nomeJogo: String): Int{
+    val stream: InputStream = File("/Users/cogeti/Dropbox/LP/Wacky-Race/src/$nomeJogo.txt").inputStream()
+    val str = stream.bufferedReader().use { it.readText() }
+    val reg = Regex(";")
+    var list = str.split(reg)
+
+    var jogo = Game(listaDeCenas, Integer.parseInt(list[0]))
+
+    if(!list.isEmpty()){
+        var j = 1
+        for(i in list){
+            var objeto = Objects()
+            inventory.itens.add(objeto)
+        }
+    }
+
+    return 0
 }
 
 fun menuOption(){
@@ -148,7 +164,7 @@ fun menuOption(){
 
         when (escolha) {
             1 -> {
-                escolha = runGame(newGame(fileReader()))
+                escolha = runGame(newGame(listaDeCenas))
             }
             2 -> {
                 println("Fim de Jogo!")
@@ -161,7 +177,9 @@ fun menuOption(){
                 println("Impossível salvar um jogo sem iniciá-lo!")
             }
             5 -> {
-                restartGame()
+                println("Digite o nome do Jogo:")
+                var nomeJogo: String = readLine()!!
+                restartGame(nomeJogo)
             }
             6 -> {
                 printHelp()

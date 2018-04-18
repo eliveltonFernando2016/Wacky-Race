@@ -5,10 +5,6 @@ class Objects {
     var descricao: String = ""
     var comando_correto: String = ""
     var cena_alvo: Int = 0
-    var resultado_positivo: String = ""
-    var resultado_negativo: String = ""
-    var resolvido: Boolean = false
-    var obtido: Boolean = false
 
     constructor(id: Int, nome: String, tipo: Int, descricao: String, comando_correto: String, cena_alvo: Int) {
         this.id = id
