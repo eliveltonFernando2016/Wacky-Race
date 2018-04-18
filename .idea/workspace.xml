@@ -1,23 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2492901c-250e-4491-8334-7e6287a94747" name="Default" comment="Atualização nas cenas, e alteração na lógica do jogo, além da criação funções auxiliares.">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/cogeti.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/cogeti.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="2492901c-250e-4491-8334-7e6287a94747" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wacky Races.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Wacky Races.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Wacky Races/Cenas.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Wacky Races/Cenas.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Wacky Races/Inventory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Wacky Races/Inventory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Wacky Races/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Wacky Races/MainKt.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cenas.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cenas.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Inventory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Inventory.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Objects.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Objects.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Scene.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scene.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -36,8 +24,17 @@
       <file leaf-file-name="Cenas.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Cenas.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="204" selection-start-line="4" selection-start-column="204" selection-end-line="4" selection-end-column="204" />
+            <state relative-caret-position="238">
+              <caret line="14" column="638" selection-start-line="14" selection-start-column="638" selection-end-line="14" selection-end-column="638" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Objects.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Objects.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -45,11 +42,13 @@
       <file leaf-file-name="main.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
-              <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+            <state relative-caret-position="136">
+              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
               <folding>
+                <element signature="e#0#89#0" expanded="true" />
                 <element signature="n#!!block;n#fileReader#0" />
                 <element signature="n#!!block;n#newGame#0" />
+                <element signature="n#!!block;n#runGame#0" />
                 <element signature="n#!!block;n#printMenu#0" />
                 <element signature="n#!!block;n#menuOption#0" />
                 <element signature="n#!!block;n#printInventario#0" />
@@ -76,12 +75,14 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>frutas</find>
-      <find>guarda</find>
-      <find>bomba</find>
-      <find>abridor</find>
       <find>protet</find>
       <find>Armas de fog</find>
       <find>todo</find>
+      <find>fruta</find>
+      <find>guarda</find>
+      <find>abridor</find>
+      <find>protetor</find>
+      <find>bomba</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -144,11 +145,11 @@
     <property name="Repository.Attach.JavaDocs" value="true" />
     <property name="Repository.Attach.Sources" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="JAVA" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documentos/IntelliJ.Portuguese.Brazil.Dictionary-master/portuguese-brazil_without-accents.dic" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.spelling" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -225,6 +226,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="4" Folder0="$USER_HOME$/Documentos/IntelliJ.Portuguese.Brazil.Dictionary-master" Folder1="$USER_HOME$/Documentos/IntelliJ.Portuguese.Brazil.Dictionary-master" Folder2="$USER_HOME$/Documentos/IntelliJ.Portuguese.Brazil.Dictionary-master" Folder3="$USER_HOME$/Documentos/IntelliJ.Portuguese.Brazil.Dictionary-master" CustomDictionaries="4" CustomDictionary0="$USER_HOME$/Documentos/IntelliJ.Portuguese.Brazil.Dictionary-master/portuguese-brazil.dic" CustomDictionary1="$USER_HOME$/Documentos/IntelliJ.Portuguese.Brazil.Dictionary-master/portuguese-brazil_technical-terms.dic" CustomDictionary2="$USER_HOME$/Documentos/IntelliJ.Portuguese.Brazil.Dictionary-master/portuguese-brazil_technical-terms_without-accents.dic" CustomDictionary3="$USER_HOME$/Documentos/IntelliJ.Portuguese.Brazil.Dictionary-master/portuguese-brazil_without-accents.dic" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="project-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -257,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523456992211</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Atualização nas cenas, e alteração na lógica do jogo, além da criação funções auxiliares.">
+      <created>1523995870076</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1523995870076</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -274,16 +283,16 @@
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info active="true" anchor="bottom" id="TODO" order="6" visible="true" weight="0.32761312" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32761312" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.324493" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50208336" side_tool="true" weight="0.32747254" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49791667" weight="0.5819033" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32917318" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32917318" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49921995" visible="true" weight="0.16414343" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49921995" weight="0.16414343" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" sideWeight="0.50078005" side_tool="true" weight="0.21912351" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -313,7 +322,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <option name="time" value="14" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -321,22 +330,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding>
-            <element signature="n#!!block;n#fileReader#0" />
-            <element signature="n#!!block;n#newGame#0" />
-            <element signature="n#!!block;n#printMenu#0" />
-            <element signature="n#!!block;n#menuOption#0" />
-            <element signature="n#!!block;n#printInventario#0" />
-            <element signature="n#!!block;n#printHelp#0" />
-            <element signature="n#!!block;n#main#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Scene.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -371,8 +364,10 @@
         <state relative-caret-position="391">
           <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
+            <element signature="e#0#89#0" expanded="true" />
             <element signature="n#!!block;n#fileReader#0" />
             <element signature="n#!!block;n#newGame#0" />
+            <element signature="n#!!block;n#runGame#0" />
             <element signature="n#!!block;n#printMenu#0" />
             <element signature="n#!!block;n#menuOption#0" />
             <element signature="n#!!block;n#printInventario#0" />
@@ -427,8 +422,10 @@
         <state relative-caret-position="170">
           <caret line="10" column="1" lean-forward="true" selection-end-line="17" selection-end-column="1" />
           <folding>
+            <element signature="e#0#89#0" expanded="true" />
             <element signature="n#!!block;n#fileReader#0" />
             <element signature="n#!!block;n#newGame#0" />
+            <element signature="n#!!block;n#runGame#0" />
             <element signature="n#!!block;n#printMenu#0" />
             <element signature="n#!!block;n#menuOption#0" />
             <element signature="n#!!block;n#printInventario#0" />
@@ -478,8 +475,10 @@
         <state relative-caret-position="391">
           <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
+            <element signature="e#0#89#0" expanded="true" />
             <element signature="n#!!block;n#fileReader#0" />
             <element signature="n#!!block;n#newGame#0" />
+            <element signature="n#!!block;n#runGame#0" />
             <element signature="n#!!block;n#printMenu#0" />
             <element signature="n#!!block;n#menuOption#0" />
             <element signature="n#!!block;n#printInventario#0" />
@@ -523,8 +522,10 @@
         <state relative-caret-position="391">
           <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
+            <element signature="e#0#89#0" expanded="true" />
             <element signature="n#!!block;n#fileReader#0" />
             <element signature="n#!!block;n#newGame#0" />
+            <element signature="n#!!block;n#runGame#0" />
             <element signature="n#!!block;n#printMenu#0" />
             <element signature="n#!!block;n#menuOption#0" />
             <element signature="n#!!block;n#printInventario#0" />
@@ -582,13 +583,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Inventory.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Scene.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -596,20 +590,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Objects.kt">
+    <entry file="jar:///usr/lib/jvm/jdk-10/lib/src.zip!/java.base/java/util/Arrays.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        <state relative-caret-position="72">
+          <caret line="4349" selection-start-line="4349" selection-end-line="4349" />
+          <folding>
+            <element signature="e#201782#201783#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Inventory.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+        <state relative-caret-position="136">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
           <folding>
+            <element signature="e#0#89#0" expanded="true" />
             <element signature="n#!!block;n#fileReader#0" />
             <element signature="n#!!block;n#newGame#0" />
+            <element signature="n#!!block;n#runGame#0" />
             <element signature="n#!!block;n#printMenu#0" />
             <element signature="n#!!block;n#menuOption#0" />
             <element signature="n#!!block;n#printInventario#0" />
@@ -619,10 +625,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Objects.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Cenas.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="204" selection-start-line="4" selection-start-column="204" selection-end-line="4" selection-end-column="204" />
+        <state relative-caret-position="238">
+          <caret line="14" column="638" selection-start-line="14" selection-start-column="638" selection-end-line="14" selection-end-column="638" />
         </state>
       </provider>
     </entry>
