@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2492901c-250e-4491-8334-7e6287a94747" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Wacky Races/Cenas.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Wacky Races/Cenas.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Wacky Races/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Wacky Races/MainKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cenas.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cenas.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.kt" afterDir="false" />
-    </list>
+    <list default="true" id="2492901c-250e-4491-8334-7e6287a94747" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Cenas.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Cenas.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cenas.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="638" selection-start-line="14" selection-start-column="638" selection-end-line="14" selection-end-column="638" />
+              <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -39,16 +33,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.kt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="-170">
               <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
               <folding>
                 <element signature="e#0#89#0" expanded="true" />
                 <element signature="n#!!block;n#fileReader#0" />
                 <element signature="n#!!block;n#newGame#0" />
-                <element signature="n#!!block;n#runGame#0" />
                 <element signature="n#!!block;n#printMenu#0" />
                 <element signature="n#!!block;n#menuOption#0" />
                 <element signature="n#!!block;n#printInventario#0" />
@@ -266,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523995870076</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Adicionada mais cenas.">
+      <created>1524010774483</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1524010774483</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -318,7 +318,8 @@
     <MESSAGE value="Lula ladrão, roubou meu coraão!" />
     <MESSAGE value="Criacão da funcão runGame! Tá quase pronta bixo!" />
     <MESSAGE value="Atualização nas cenas, e alteração na lógica do jogo, além da criação funções auxiliares." />
-    <option name="LAST_COMMIT_MESSAGE" value="Atualização nas cenas, e alteração na lógica do jogo, além da criação funções auxiliares." />
+    <MESSAGE value="Adicionada mais cenas." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionada mais cenas." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -367,7 +368,6 @@
             <element signature="e#0#89#0" expanded="true" />
             <element signature="n#!!block;n#fileReader#0" />
             <element signature="n#!!block;n#newGame#0" />
-            <element signature="n#!!block;n#runGame#0" />
             <element signature="n#!!block;n#printMenu#0" />
             <element signature="n#!!block;n#menuOption#0" />
             <element signature="n#!!block;n#printInventario#0" />
@@ -425,7 +425,6 @@
             <element signature="e#0#89#0" expanded="true" />
             <element signature="n#!!block;n#fileReader#0" />
             <element signature="n#!!block;n#newGame#0" />
-            <element signature="n#!!block;n#runGame#0" />
             <element signature="n#!!block;n#printMenu#0" />
             <element signature="n#!!block;n#menuOption#0" />
             <element signature="n#!!block;n#printInventario#0" />
@@ -478,7 +477,6 @@
             <element signature="e#0#89#0" expanded="true" />
             <element signature="n#!!block;n#fileReader#0" />
             <element signature="n#!!block;n#newGame#0" />
-            <element signature="n#!!block;n#runGame#0" />
             <element signature="n#!!block;n#printMenu#0" />
             <element signature="n#!!block;n#menuOption#0" />
             <element signature="n#!!block;n#printInventario#0" />
@@ -525,7 +523,6 @@
             <element signature="e#0#89#0" expanded="true" />
             <element signature="n#!!block;n#fileReader#0" />
             <element signature="n#!!block;n#newGame#0" />
-            <element signature="n#!!block;n#runGame#0" />
             <element signature="n#!!block;n#printMenu#0" />
             <element signature="n#!!block;n#menuOption#0" />
             <element signature="n#!!block;n#printInventario#0" />
@@ -607,21 +604,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.kt">
+    <entry file="file://$PROJECT_DIR$/src/Cenas.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="e#0#89#0" expanded="true" />
-            <element signature="n#!!block;n#fileReader#0" />
-            <element signature="n#!!block;n#newGame#0" />
-            <element signature="n#!!block;n#runGame#0" />
-            <element signature="n#!!block;n#printMenu#0" />
-            <element signature="n#!!block;n#menuOption#0" />
-            <element signature="n#!!block;n#printInventario#0" />
-            <element signature="n#!!block;n#printHelp#0" />
-            <element signature="n#!!block;n#main#0" />
-          </folding>
+        <state relative-caret-position="238">
+          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -632,10 +618,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cenas.txt">
+    <entry file="file://$PROJECT_DIR$/src/main.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="638" selection-start-line="14" selection-start-column="638" selection-end-line="14" selection-end-column="638" />
+        <state relative-caret-position="-170">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="e#0#89#0" expanded="true" />
+            <element signature="n#!!block;n#fileReader#0" />
+            <element signature="n#!!block;n#newGame#0" />
+            <element signature="n#!!block;n#printMenu#0" />
+            <element signature="n#!!block;n#menuOption#0" />
+            <element signature="n#!!block;n#printInventario#0" />
+            <element signature="n#!!block;n#printHelp#0" />
+            <element signature="n#!!block;n#main#0" />
+          </folding>
         </state>
       </provider>
     </entry>
