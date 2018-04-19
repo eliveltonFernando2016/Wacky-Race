@@ -134,7 +134,10 @@ fun saveGame(nomeJogo: String, conteudo: String){
     println("Game saved!")
 }
 
-fun restartGame(nomeJogo: String): Int{
+fun restartGame(): Game{
+    println("Digite o nome do Jogo:")
+    var nomeJogo: String = readLine()!!
+
     val stream: InputStream = File("/Users/cogeti/Dropbox/LP/Wacky-Race/src/$nomeJogo.txt").inputStream()
     val str = stream.bufferedReader().use { it.readText() }
     val reg = Regex(";")
@@ -143,14 +146,13 @@ fun restartGame(nomeJogo: String): Int{
     var jogo = Game(listaDeCenas, Integer.parseInt(list[0]))
 
     if(!list.isEmpty()){
-        var j = 1
         for(i in list){
             var objeto = Objects()
             inventory.itens.add(objeto)
         }
     }
 
-    return 0
+    return jogo
 }
 
 fun menuOption(){
@@ -177,9 +179,7 @@ fun menuOption(){
                 println("Impossível salvar um jogo sem iniciá-lo!")
             }
             5 -> {
-                println("Digite o nome do Jogo:")
-                var nomeJogo: String = readLine()!!
-                restartGame(nomeJogo)
+                escolha = runGame(restartGame())
             }
             6 -> {
                 printHelp()
