@@ -7,7 +7,7 @@ var listaDeCenas = fileReader()
 fun fileReader(): ArrayList<Scene>{
     val listaCenas = ArrayList<Scene>()
 
-    val stream: InputStream = File("/Users/cogeti/Dropbox/LP/Wacky-Race/src/Cenas.txt").inputStream()
+    val stream: InputStream = File(System.getProperty("user.dir") + "/src/Cenas.txt").inputStream()
     //val stream: InputStream = File("/home/elivelton/Dropbox/LP/Wacky-Race/src/Cenas.txt").inputStream()
     val str = stream.bufferedReader().use { it.readText() }
     val reg = Regex(";;")
