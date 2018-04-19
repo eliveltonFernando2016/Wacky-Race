@@ -8,7 +8,6 @@ fun fileReader(): ArrayList<Scene>{
     val listaCenas = ArrayList<Scene>()
 
     val stream: InputStream = File(System.getProperty("user.dir") + "/src/Cenas.txt").inputStream()
-    //val stream: InputStream = File("/home/elivelton/Dropbox/LP/Wacky-Race/src/Cenas.txt").inputStream()
     val str = stream.bufferedReader().use { it.readText() }
     val reg = Regex(";;")
     var list = str.split(reg)
@@ -69,32 +68,38 @@ fun runGame(jogo: Game): Int{
                 val reg = Regex(" ")
                 val list = escolha.split(reg)
 
-                var acao = list[0]
-                var objeto = list[1]
-
-                var objetoEncontrado = Objects()
-                var objetoOk = false
-
-                for (i in jogo.scenes[jogo.cena_atual].itens) {
-                    if (i.nome.equals(objeto, true) && (i.comando_correto.equals(acao, true) || acao.equals("check", true))) {
-                        objetoEncontrado = i
-                        objetoOk = true
-                    }
+                if(list.size == 1) {                        // asdas
+                    println("Comando invalido!")
                 }
+                else{
 
-                if (objetoOk) {
-                    if(acao.equals("use", true)) {
-                        jogo.cena_atual = objetoEncontrado.cena_alvo-1
+                    var acao = list[0]
+                    var objeto = list[1]
+
+                    var objetoEncontrado = Objects()
+                    var objetoOk = false
+
+                    for (i in jogo.scenes[jogo.cena_atual].itens) {
+                        if (i.nome.equals(objeto, true) && (i.comando_correto.equals(acao, true) || acao.equals("check", true))) {
+                            objetoEncontrado = i
+                            objetoOk = true
+                        }
                     }
-                    else if(acao.equals("get", true)) {
-                        objetoEncontrado.comando_correto = "USE"
-                        inventory.itens.add(objetoEncontrado)
+
+                    if (objetoOk) {
+                        if(acao.equals("use", true)) {
+                            jogo.cena_atual = objetoEncontrado.cena_alvo-1
+                        }
+                        else if(acao.equals("get", true)) {
+                            objetoEncontrado.comando_correto = "USE"
+                            inventory.itens.add(objetoEncontrado)
+                        }
+                        else if(acao.equals("check", true)){
+                            println(objetoEncontrado.descricao)
+                        }
+                    } else {
+                        println("Objeto ou Ação incorretos!")
                     }
-                    else if(acao.equals("check", true)){
-                        println(objetoEncontrado.descricao)
-                    }
-                } else {
-                    println("Objeto ou Ação incorretos!")
                 }
             }
         }
@@ -127,7 +132,7 @@ fun concatenaString(idCenaAtual: Int): String{
 
 fun saveGame(nomeJogo: String, conteudo: String){
     try {
-        File("/Users/cogeti/Dropbox/LP/Wacky-Race/src/$nomeJogo.txt").writeText(conteudo)
+        File(System.getProperty("user.dir") + "/src/$nomeJogo.txt").writeText(conteudo)
     } catch (e: Exception){
         e.printStackTrace()
     }
@@ -138,7 +143,7 @@ fun restartGame(): Game{
     println("Digite o nome do Jogo:")
     var nomeJogo: String = readLine()!!
 
-    val stream: InputStream = File("/Users/cogeti/Dropbox/LP/Wacky-Race/src/$nomeJogo.txt").inputStream()
+    val stream: InputStream = File(System.getProperty("user.dir") + "/src/$nomeJogo.txt").inputStream() //a sa
     val str = stream.bufferedReader().use { it.readText() }
     val reg = Regex(";")
     var list = str.split(reg)
